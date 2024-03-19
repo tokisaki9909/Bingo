@@ -1,38 +1,41 @@
-console.log("Hello World!")
+console.log("Hello World");
 
-let B = false,
- I = false, 
- N = false, 
- G = false, 
- O = false;
-function newNumber (maxNumber){
-let newNumber = Math.floor(Math.random() * maxNumber) + 1;
-if(x <= 15)
-{
-    console.log(`New number is ${x} belongs to "B"`);
-    B=true;
-    BNum = x;
-} else if (x >= 16 && x <= 30 ){
-    console.log (`New number is ${x} belongs to "I"`);
-    I= true;
-    INum = x;
-} else if (x >= 31 && x <=45 ) {
-    console.log (`New number is ${x} belong to "N"`);
-    N=true;
-    NNum = x;
-} else if ( x >= 46 && x  <= 60){
-    console.log (`New number is ${x} belongs to "G"`);
-    G=true;
-    GNum = x;
-}else if ( x >=  61 && x <= 75){
-    console.log (`New Number is ${x} belongs to "0"`);
-    O=true;
-    ONum = x;
-}else{
-    console.log(`New number ${x} is invalid!`);   
-}
 
-if (B = true && I == true && N == true && G == true && O == true){
-    console.log(`BINGOOOO!!!!`);
-  }
+let B = false, 
+    I = false,
+    N = false,
+    G = false,
+    O = false;
+
+generateRandomNumber(75);
+
+
+function generateRandomNumber (max) 
+
+{ 
+    let randomNum = Math.floor(Math.random() * max) + 1;
+ 
+    if(randomNum <= 15) 
+    { B = true;
+    console.log(`Random number ${randomNum} is in B. 1 -15`);
+    }  else if (randomNum >= 16 && randomNum <= 30) 
+    { I = true;
+    console.log(`Random number ${randomNum} is in I. 16 - 30`);
+    } else if (randomNum >= 31 && randomNum <= 45) 
+    { N = true;
+    console.log(`Random number ${randomNum} is in N. 31- 45`);
+    } else if (randomNum >= 46 && randomNum <= 60) 
+    { G = true;
+    console.log(`Random number ${randomNum} is in G. 46 - 60`);
+    } else if (randomNum >= 61 && randomNum <= 75) 
+    { O = true;
+    console.log(`Random number ${randomNum} is in O. 61 - 75`);
+    } else {
+      console.log(`Random Number is invalid`);
+    }
+
+    if (B == true && I == true && N == true && G == true && O == true)
+    {
+    console.log(`BINGO!!!`);
+    }
 }
