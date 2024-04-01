@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bingo!</title>
-    </head>
-    <body>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+<head>
+    <title>Bingo!</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
     crossorigin="anonymous">
-</script>
-    </body>
-</html>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous">
+    </script>
+</head>
 <body>
-    <div>
-        <table class="table">
-        <thead>
-
-            <th>
-                <h1>B</h1>
-            </th>
-
-            <th>
-                <h1>I</h1>
-            </th>
-
-            <th>
-                <h1>N</h1>
-            </th>
-
-            <th>
-                <h1>G</h1>
-            </th>
-
-            <th>
-                <h1>O</h1>
-            </th>
-
-        </thead>
-        <tbody>
-
-         <tr>
-            <td>1</td>
-            <td>16</td>
-            <td>31</td>
-            <td>46</td>
-            <td>61</td>
-         </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
+    <div class="table-responsive" style="text-align: center;">
+        <table class="table table-dark table-stripped table-hover table-bordered">
+            <thead>
+                <th><h1>B</h1></th>
+                <th><h1>I</h1></th>
+                <th><h1>N</h1></th>
+                <th><h1>G</h1></th>
+                <th><h1>O</h1></th>     
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td id="td1">3</td>
+                    <td id="td2">18</td>
+                    <td id="td3">37</td>
+                    <td id="td4">57</td>
+                    <td id="td5">75</td>
+                </tr>
+                <tr>
+                    <td id="td6">11</td>
+                    <td id="td7">28</td>
+                    <td id="td8">43</td>
+                    <td id="td9">55</td>
+                    <td id="td10">70</td>
+                </tr>
+                <tr>
+                    <td id="td11">8</td>
+                    <td id="td12">22</td>
+                    <td>★</td>
+                    <td id="td14">46</td>
+                    <td id="td15">69</td>
+                </tr>
+                <tr>
+                    <td id="td16">1</td>
+                    <td id="td17">16</td>
+                    <td id="td18">32</td>
+                    <td id="td19">46</td>
+                    <td id="td20">74</td>
+                </tr>
+                <tr>
+                    <td id="td21">15</td>
+                    <td id="td22">30</td>
+                    <td id="td23">39</td>
+                    <td id="td24">51</td>
+                    <td id="td25">66</td>
+                </tr>
+            </tbody>
         </table>
     </div>
+    <script src="./script.js"></script>
 </body>
-<script src="./Index.js"></script>
 </html>
